@@ -1,0 +1,259 @@
+:root {
+    --blue-color: #000064;
+    --yellow-color: #fff200;
+    --blue-light-color: #cdcdff;
+    /*--grey-color: #e7e7e7;*/
+    --grey-color: #e2e2e2;
+    --white-color: whitesmoke;
+    --vh: 1vh;
+}
+
+/* noto-serif-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/noto-serif-v9-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('/fonts/noto-serif-v9-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/noto-serif-v9-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/noto-serif-v9-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('/fonts/noto-serif-v9-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/noto-serif-v9-latin-ext_latin-regular.svg#NotoSerif') format('svg'); /* Legacy iOS */
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background-color: var(--grey-color);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.content {
+    flex: 1;
+    margin-top: 5rem;
+    display: block;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 70em;
+}
+
+header {
+    position: fixed;
+    align-items: center;
+    background-color: var(--blue-color);
+    z-index: 999;
+}
+
+header .line {
+    display: block;
+    width: 100vw;
+    height: .4rem;
+    padding-top: .4rem;
+}
+
+header .panel {
+    display: flex;
+    width: 100vw;
+    margin-top: .8rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--yellow-color);
+}
+
+header h1 {
+    position: absolute;
+    left: 6rem;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', sans-serif;
+    white-space: normal;
+    text-decoration: none;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-container img {
+    max-height: 2.5rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+}
+
+div.contact-items {
+    justify-content: center;
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+}
+
+.slds-table th, .slds-table td {
+    font-size: medium;
+}
+
+table {
+    max-width: 25rem;
+}
+
+.tile {
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--white-color);
+    font-size: 1.2rem;
+    color: black;
+    /*border: 2px solid var(--blue-color);*/
+}
+
+.content .title {
+    color: black;
+    padding-bottom: 0.4em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.tile.navigate {
+    margin-top: -1rem;
+    border-radius: 0 0 .4rem .4rem;
+}
+
+.footer {
+    line-height: 1.2rem;
+    font-size: .8rem;
+    background-color: var(--blue-color);
+    color: var(--grey-color);
+    /*max-width: 70em;*/
+}
+
+.footer > div {
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .slds-grid {
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.footer a:link, .footer a:visited, .footer a:hover, .footer a:active {
+    color: var(--yellow-color);
+}
+
+.navigate img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 16em;
+    display: block;
+    vertical-align: bottom;
+}
+
+.map {
+    width: 100%;
+    border: 0;
+    /*border: 1px solid dimgrey;*/
+    border-radius: 0.4rem 0.4rem 0 0;
+    margin-bottom: 1em;
+    min-height: 20em;
+    background-color: var(--white-color);
+}
+
+.opening-hours {
+    max-width: 25rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* medium screen */
+@media (min-width: 961px) {
+    header .logo-container img {
+        margin-left: 4rem;
+        max-height: 3.8rem;
+        height: 3.8rem;
+    }
+
+    .navigate img {
+        max-width: 14em;
+    }
+
+    .content {
+        margin-top: 8rem;
+    }
+
+    header .panel {
+        margin-top: 1.8rem;
+        height: 4.5rem;
+    }
+
+    header h1 {
+        left: 11rem;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        width: initial;
+    }
+
+    header .line {
+        height: 1rem;
+        padding-top: 1rem;
+    }
+
+    .footer {
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    .map {
+        height: 30rem;
+    }
+}
+
+/* large screen */
+@media (min-width: 1025px) {
+    header .logo-container img {
+        margin-left: 22rem;
+        max-height: 3.8rem;
+        height: 3.8rem;
+    }
+
+    .content {
+        margin-top: 8rem;
+    }
+
+    header .panel {
+        margin-top: 1.8rem;
+        height: 4.5rem;
+    }
+
+    header h1 {
+        left: 29rem;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        width: initial;
+    }
+
+    header .line {
+        height: 1rem;
+        padding-top: 1rem;
+    }
+
+    .footer {
+        margin-top: 3rem;
+    }
+}
+
