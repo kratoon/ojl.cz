@@ -29,7 +29,7 @@ function App() {
                             <div className="slds-size_1-of-2">
                                 <img alt="Waze Navigate "
                                      className="waze navigate"
-                                     src="/resources/waze.png"
+                                     src="./resources/waze.png"
                                      onClick={navigateWaze}
                                      style={{cursor: 'pointer'}}
                                 />
@@ -37,7 +37,7 @@ function App() {
                             <div className="slds-size_1-of-2">
                                 <img alt="Google Navigate"
                                      className="google navigate"
-                                     src="/resources/google-maps.png"
+                                     src="./resources/google-maps.png"
                                      onClick={navigateGoogleMaps}
                                      style={{cursor: 'pointer'}}
                                 />
