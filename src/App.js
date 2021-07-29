@@ -10,9 +10,10 @@ function navigateGoogleMaps() {
 }
 
 function App() {
-    if (location.protocol === "http:" && !location.host.startsWith("localhost:")) {
+    if (window.location.protocol === "http:" && !window.location.host.startsWith("localhost:")) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
         useEffect(() => {
-            location.href.replace("http:", "https:");
+            window.location.href.replace("http:", "https:");
         }, []);
         return null;
     }
