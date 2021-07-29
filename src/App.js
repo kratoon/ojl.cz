@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import {useEffect} from "react";
 
 function navigateWaze() {
     window.open(`https://ul.waze.com/ul?preview_venue_id=9961972.99750797.80478&navigate=yes`);
@@ -9,6 +10,12 @@ function navigateGoogleMaps() {
 }
 
 function App() {
+    if (location.protocol === "http:" && !location.host.startsWith("localhost:")) {
+        useEffect(() => {
+            location.href.replace("http:", "https:");
+        }, []);
+        return null;
+    }
     return (
         <span className="">
             <Header/>
