@@ -13,7 +13,7 @@ function App() {
     if (window.location.protocol === "http:" && !window.location.host.startsWith("localhost:")) {
         // eslint-disable-next-line react-hooks/rules-of-hooks
         useEffect(() => {
-            window.location.href.replace("http:", "https:");
+            window.location.href = window.location.href.replace("http:", "https:");
         }, []);
         return null;
     }
