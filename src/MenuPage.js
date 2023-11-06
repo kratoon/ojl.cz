@@ -1,15 +1,15 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Menu from "./Menu";
+import Header from './Header';
+import Footer from './Footer';
+import Menu from './Menu';
 
 function MenuPage() {
     return (
         <span className="">
-            <Header/>
+            <Header />
             <div className="content">
-                <Menu/>
+                <Menu />
             </div>
-            <Footer/>
+            <Footer />
         </span>
     );
 }

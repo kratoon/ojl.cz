@@ -214,9 +214,10 @@ table {
 }
 
 .menu-page {
-    max-width: 40rem;
+    /*width: 40em;*/
     background-color: white;
-    aspect-ratio: 15/21;
+    aspect-ratio: 14.85/21;
+    /*height: calc(21 / 14.85 * (40em));*/
     padding: 1rem;
 }
 
@@ -237,7 +238,7 @@ table {
 }
 
 .menu .item {
-    padding: 0 2rem 1rem 2rem;
+    padding: 0 1.5rem 1rem 1.5rem;
     font-size: small;
 }
 
@@ -251,7 +252,14 @@ table {
 
 .menu .item .allergens {
     padding-top: 0.5rem;
+    /*margin-right: 1rem;*/
     font-size: xx-small;
+}
+
+.menu .item .quantity {
+    /*margin-right: 1rem;*/
+    float: right;
+    font-size: smaller;
 }
 
 .menu .item .price {
@@ -260,6 +268,8 @@ table {
 
 @media screen {
     .menu-page {
+        max-width: 40em;
+        /*max-height: 21em;*/
         margin-bottom: 1rem;
     }
 }
@@ -291,8 +301,9 @@ table {
 
     .menu-page {
         position: page;
-        max-width: 50%;
-        max-height: 100%;
+        max-width: 14.84cm;
+        max-height: 21cm;
+        aspect-ratio: 14.85/21;
     }
 
     .menu-page:nth-of-type(2n) {

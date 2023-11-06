@@ -1,24 +1,23 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Menu from "./Menu";
+import Header from './Header';
+import Footer from './Footer';
+import Menu from './Menu';
 
 function navigateWaze() {
     window.open(`https://ul.waze.com/ul?preview_venue_id=9961972.99750797.80478&navigate=yes`);
 }
 
 function navigateGoogleMaps() {
-    window.open(`https://www.google.com/maps/place/OJL/@50.0471916,15.2192402,19.25z/data=!4m8!1m2!3m1!2sOJL!3m4!1s0x470c150638eb618d:0xf424d2af03223371!8m2!3d50.0470013!4d15.2191684`);
+    window.open(
+        `https://www.google.com/maps/place/OJL/@50.0471916,15.2192402,19.25z/data=!4m8!1m2!3m1!2sOJL!3m4!1s0x470c150638eb618d:0xf424d2af03223371!8m2!3d50.0470013!4d15.2191684`
+    );
 }
 
 function MainPage() {
     return (
         <span className="">
-            <Header/>
+            <Header />
             <div className="content">
                 <div className="slds-grid slds-wrap">
-                    <div className="slds-col slds-size_full">
-                        <Menu/>
-                    </div>
                     <div id="map" className="slds-col slds-size_full">
                         <iframe
                             title="Google Map"
@@ -30,26 +29,31 @@ function MainPage() {
                     <div className="slds-col slds-size_full tile navigate">
                         <div className="slds-grid slds-grid_vertical-align-end">
                             <div className="slds-size_1-of-2">
-                                <img alt="Waze Navigate "
-                                     className="waze navigate"
-                                     src="./resources/waze.png"
-                                     onClick={navigateWaze}
-                                     style={{cursor: 'pointer'}}
+                                <img
+                                    alt="Waze Navigate "
+                                    className="waze navigate"
+                                    src="./resources/waze.png"
+                                    onClick={navigateWaze}
+                                    style={{ cursor: 'pointer' }}
                                 />
                             </div>
                             <div className="slds-size_1-of-2">
-                                <img alt="Google Navigate"
-                                     className="google navigate"
-                                     src="./resources/google-maps.png"
-                                     onClick={navigateGoogleMaps}
-                                     style={{cursor: 'pointer'}}
+                                <img
+                                    alt="Google Navigate"
+                                    className="google navigate"
+                                    src="./resources/google-maps.png"
+                                    onClick={navigateGoogleMaps}
+                                    style={{ cursor: 'pointer' }}
                                 />
                             </div>
                         </div>
                     </div>
+                    {/*<div className="slds-col slds-size_full">*/}
+                    {/*    <Menu />*/}
+                    {/*</div>*/}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </span>
     );
 }
