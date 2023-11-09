@@ -4,21 +4,26 @@ import menuData from './menuData';
 function Column({ cols }) {
     return (
         <div className="slds-col slds-size_1-of-2">
-            {cols.map(({ title, items, id }) => (
-                <div key={id}>
-                    <div className="title">{title}&zwnj;</div>
-                    {items.map((item) => (
-                        <MenuItem
-                            key={item.id}
-                            title={item.name}
-                            desc={item.desc}
-                            allergens={item.allergens}
-                            quantity={item.quantity}
-                            price={item.price}
-                        />
-                    ))}
-                </div>
-            ))}
+            {cols.map(({ title, items, id }) => {
+                return (
+                    <div key={id}>
+                        <div className={`title ${id}`}>{title}&zwnj;</div>
+                        {items.map((item) => (
+                            <MenuItem
+                                key={item.id}
+                                name={item.name}
+                                desc={item.desc}
+                                allergens={item.allergens}
+                                quantity={item.quantity}
+                                price={item.price}
+                                price2={item.price2}
+                                id={item.id}
+                                isDistillate={item.isDistillate}
+                            />
+                        ))}
+                    </div>
+                );
+            })}
         </div>
     );
 }

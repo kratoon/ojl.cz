@@ -214,11 +214,12 @@ table {
 }
 
 .menu-page {
-    /*width: 40em;*/
+    width: 40em;
     background-color: white;
     aspect-ratio: 14.85/21;
-    /*height: calc(21 / 14.85 * (40em));*/
+    height: calc(21 / 14.85 * (40em));
     padding: 1rem;
+    /*border: black 1px solid;*/
 }
 
 .menu-page.break {
@@ -237,9 +238,24 @@ table {
     font-weight: bold;
 }
 
+.menu .title.distillate {
+    margin-bottom: 0;
+}
+
 .menu .item {
-    padding: 0 1.5rem 1rem 1.5rem;
     font-size: small;
+}
+
+.menu .item:not(.distillate) {
+    padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.menu .item.distillate {
+    padding: 0 1.5rem 0.6rem 1.5rem;
+}
+
+.menu .item.distillates-size {
+    /*padding: 0 1.5rem 0.5rem 1.5rem;*/
 }
 
 .menu .item .name {
@@ -248,18 +264,25 @@ table {
 
 .menu .item .desc {
     font-size: smaller;
+    font-style: italic;
 }
 
 .menu .item .allergens {
     padding-top: 0.5rem;
-    /*margin-right: 1rem;*/
     font-size: xx-small;
 }
 
 .menu .item .quantity {
-    /*margin-right: 1rem;*/
     float: right;
     font-size: smaller;
+}
+
+.menu .item .distillates-size {
+    font-size: smaller;
+}
+
+.float-right {
+    float: right;
 }
 
 .menu .item .price {
@@ -268,7 +291,7 @@ table {
 
 @media screen {
     .menu-page {
-        max-width: 40em;
+        max-width: 40rem;
         /*max-height: 21em;*/
         margin-bottom: 1rem;
     }
@@ -289,6 +312,10 @@ table {
         margin: 0;
     }
 
+    .menu .item.distillates {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
     .print-wrap {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -302,7 +329,7 @@ table {
     .menu-page {
         position: page;
         max-width: 14.84cm;
-        max-height: 21cm;
+        max-height: 20.8cm;
         aspect-ratio: 14.85/21;
     }
 
