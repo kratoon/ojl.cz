@@ -48,10 +48,10 @@ function MainPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="slds-col slds-size_full">
-                        <div className="slds-m-top--large"></div>
-                        <Menu />
-                    </div>
+                    {/*<div className="slds-col slds-size_full">*/}
+                    {/*    <div className="slds-m-top--large"></div>*/}
+                    {/*    <Menu />*/}
+                    {/*</div>*/}
                 </div>
             </div>
             <Footer />

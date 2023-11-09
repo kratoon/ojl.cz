@@ -292,8 +292,9 @@ table {
 @media screen {
     .menu-page {
         max-width: 40rem;
-        /*max-height: 21em;*/
+        /*max-height: 30rem;*/
         margin-bottom: 1rem;
+        max-height: calc(21 / 14.85 * (35em));
     }
 }
 
