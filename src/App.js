@@ -1,7 +1,7 @@
-import MainPage from "./MainPage";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import NotFoundPage from "./NotFoundPage";
-import MenuPage from "./MenuPage";
+import MainPage from './MainPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NotFoundPage from './NotFoundPage';
+import MenuPage from './MenuPage';
 
 function App() {
     if (window.location.protocol === 'http:' && !window.location.host.startsWith('localhost:')) {
