@@ -1,8 +1,9 @@
 import MainPage from './MainPage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import NotFoundPage from './NotFoundPage';
-import MenuPage from './MenuPage';
 import MenuFirstPage from './MenuFirstPage';
+import MenuLastPage from './MenuLastPage';
+import MenuPage from './MenuPage';
+import NotFoundPage from './NotFoundPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
     if (window.location.protocol === 'http:' && !window.location.host.startsWith('localhost:')) {
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/" element={<MainPage />} />
                 <Route path="menu" element={<MenuPage />} />
                 <Route path="menu-first-page" element={<MenuFirstPage />} />
+                <Route path="menu-last-page" element={<MenuLastPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>

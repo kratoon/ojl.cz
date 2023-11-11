@@ -4,25 +4,21 @@ function Page() {
             <div className="menu-logo-container">
                 <img className="ojl" src="./resources/logo-dark.svg" alt="logo" />
             </div>
-            <div className="slds-align--absolute-center welcome-text">Snack Bar</div>
-            <div className="slds-align--absolute-center welcome-text2">Jídelní a nápojový lístek</div>
-            <div className="menu-logo-container">
-                <img className="svijany" src="./resources/svijany-logo.svg" alt="logo" />
-            </div>
+            <div className="slds-align--absolute-center welcome-text">Děkujeme za Vaši návštěvu</div>
         </div>
     );
 }
 
-function MenuFirstPage() {
+function MenuLastPage() {
     return (
         <span className="">
             <div className="content">
                 <span className="menu slds-align_absolute-center">
                     <div className="print-wrap">
-                        <div className="menu-page first">
+                        <div className="menu-page last">
                             <Page />
                         </div>
-                        <div className="menu-page first break">
+                        <div className="menu-page last break">
                             <Page />
                         </div>
                     </div>
@@ -32,4 +28,4 @@ function MenuFirstPage() {
     );
 }
 
-export default MenuFirstPage;
+export default MenuLastPage;

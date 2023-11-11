@@ -1,10 +1,16 @@
 {
   "trailingComma": "none",
-  "importOrder": [ "^lwc$", "^@salesforce(.*)$", "^lightning/(.*)$", "^@(.*)/(.*)$", "^c/(.*)", "^[./]" ],
-  "importOrderParserPlugins": [ "decorators" ],
+  "importOrder": [
+    "^lwc$",
+    "^@salesforce(.*)$",
+    "^lightning/(.*)$",
+    "^@(.*)/(.*)$",
+    "^c/(.*)",
+    "^[./]"
+  ],
+  "importOrderParserPlugins": ["decorators"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
-  "tabWidth": 4,
   "overrides": [
     {
       "files": "**/*.css",
@@ -32,7 +38,7 @@
       "files": "**/*.json",
       "options": {
         "printWidth": 140,
-        "tabWidth": 4,
+        "tabWidth": 2,
         "singleQuote": true
       }
     },
@@ -67,4 +73,4 @@
       }
     }
   ]
-}
+  }
