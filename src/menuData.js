@@ -124,17 +124,19 @@ let menu = [
     null,
     'nealko',
     {
+        name: 'kofola',
+        desc: 'čepovaná',
+        quantity: '0.5 l',
+        price: 30
+    },
+    {
+        name: 'kofola',
+        desc: 'čepovaná',
+        quantity: '0.3 l',
+        price: 22
+    },
+    {
         name: 'coca cola',
-        quantity: '0.33 l',
-        price: 30
-    },
-    {
-        name: 'fanta',
-        quantity: '0.33 l',
-        price: 30
-    },
-    {
-        name: 'sprite',
         quantity: '0.33 l',
         price: 30
     },
@@ -164,11 +166,12 @@ let menu = [
     },
     {
         name: 'teplé jablíčko',
+        desc: 'brusinka, hruška, jablíčko',
         price: 25
     },
     {
         name: 'čaj',
-        desc: 'černý, zelený, ovocný',
+        desc: 'černý, zelený, ovocný, máta',
         price: 25
     },
     {
@@ -209,33 +212,38 @@ let menu = [
         price: 32
     },
     {
-        name: 'latte malé',
+        name: 'latte',
+        size: 'L',
         quantity: '210 ml',
         price: 40
     },
     {
         name: 'latte',
+        size: 'XL',
         quantity: '420 ml',
         price: 55
     },
-    // null,
     {
-        name: 'cappuccino malé',
+        name: 'cappuccino',
+        size: 'L',
         quantity: '210 ml',
         price: 40
     },
     {
         name: 'cappuccino',
+        size: 'XL',
         quantity: '420 ml',
         price: 55
     },
     {
-        name: 'flat white malé',
+        name: 'flat white',
+        size: 'L',
         quantity: '210 ml',
         price: 40
     },
     {
         name: 'flat white',
+        size: 'XL',
         quantity: '420 ml',
         price: 55
     },
@@ -253,11 +261,13 @@ let menu = [
     'pivo',
     {
         name: 'svijanský máz 11º',
+        desc: 'čepované',
         quantity: '0.5 l',
         price: 32
     },
     {
         name: 'svijanský máz 11º',
+        desc: 'čepované',
         quantity: '0.3 l',
         price: 22
     },
@@ -266,7 +276,7 @@ let menu = [
         quantity: '0.5 l',
         price: 25
     },
-    'sudová vína',
+    'stáčená vína',
     {
         name: 'cabernet sauvignon rosé',
         quantity: '0.1 l',
@@ -295,7 +305,7 @@ let menu = [
         price2: 20
     },
     {
-        name: 'finská vokda',
+        name: 'finská vodka',
         price: 48,
         price2: 25
     },

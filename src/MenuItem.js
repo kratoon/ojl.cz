@@ -14,15 +14,15 @@ function QuantityCell({ id, quantity, price2 }) {
     );
 }
 
-function MenuItem({ name, desc, allergens, quantity, price, price2, id, isDistillate }) {
+function MenuItem({ name, desc, allergens, quantity, price, price2, id, isDistillate, size }) {
     const isDistillatesSize = id === 'distillates-size';
     const distillate = isDistillate ? 'distillate' : '';
-    console.log(name, isDistillate);
     return (
         <div className={`item ${id} ${distillate}`}>
             <div className="slds-grid">
                 <div className="slds-col">
-                    <div className="name">{name}</div>
+                    <span className="name">{name}</span>
+                    {size ? <span> {size}</span> : null}
                 </div>
                 <QuantityCell id={id} quantity={quantity} price2={price2} />
                 <div className={'slds-col slds-size--3-of-12'}>

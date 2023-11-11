@@ -19,6 +19,7 @@ function Column({ cols }) {
                                 price2={item.price2}
                                 id={item.id}
                                 isDistillate={item.isDistillate}
+                                size={item.size}
                             />
                         ))}
                     </div>
