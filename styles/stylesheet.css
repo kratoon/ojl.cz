@@ -230,14 +230,23 @@ table {
     margin-top: 4rem;
 }
 
-.menu-page.first .title {
+.menu-page .welcome-text {
+    font-weight: bold;
+}
+
+.menu-page.first .welcome-text {
     /*margin-top: 12rem;*/
     margin-top: 6rem;
     font-size: 5rem;
-    /*font-style: italic;*/
 }
 
-.menu-page.first .title2 {
+.menu-page.last .welcome-text {
+    margin-top: 12rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.menu-page.first .welcome-text2 {
     margin-top: 3rem;
     font-size: xx-large;
     font-style: italic;
