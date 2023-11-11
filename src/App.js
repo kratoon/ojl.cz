@@ -2,6 +2,7 @@ import MainPage from './MainPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFoundPage from './NotFoundPage';
 import MenuPage from './MenuPage';
+import MenuFirstPage from './MenuFirstPage';
 
 function App() {
     if (window.location.protocol === 'http:' && !window.location.host.startsWith('localhost:')) {
@@ -13,6 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="menu" element={<MenuPage />} />
+                <Route path="menu-first-page" element={<MenuFirstPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>

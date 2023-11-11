@@ -213,13 +213,42 @@ table {
     font-family: "Open Sans", "Noto Serif", "sans-serif";
 }
 
+.menu .menu-logo-container img {
+    filter: saturate(0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu .menu-logo-container img.ojl {
+    width: 12rem;
+    margin-top: 8rem;
+}
+
+.menu .menu-logo-container img.svijany {
+    width: 6rem;
+    margin-top: 4rem;
+}
+
+.menu-page.first .title {
+    /*margin-top: 12rem;*/
+    margin-top: 6rem;
+    font-size: 5rem;
+    /*font-style: italic;*/
+}
+
+.menu-page.first .title2 {
+    margin-top: 3rem;
+    font-size: xx-large;
+    font-style: italic;
+}
+
 .menu-page {
     width: 40em;
     background-color: white;
     aspect-ratio: 14.85/21;
     height: calc(21 / 14.85 * (40em));
     padding: 1rem;
-    /*border: black 1px solid;*/
 }
 
 .menu-page.break {
