@@ -65,6 +65,10 @@ let menu = [
         price: 150
     },
     {
+        name: 'fish & chips',
+        price: 80
+    },
+    {
         name: 'triangles sýr',
         price: 80
     },
@@ -144,6 +148,12 @@ let menu = [
         name: 'kinley tonic',
         quantity: '0.33 l',
         price: 30
+    },
+    {
+        name: 'voda',
+        desc: 'karafa',
+        quantity: '0.5 l',
+        price: 20
     },
     {
         name: 'bonaqua',
