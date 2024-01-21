@@ -68,7 +68,7 @@ let menu = [
         name: 'fish & chips',
         desc: 'treska bílá v křupavé panádě s hranolkami',
         allergens: '1,1a,4,7',
-        quantity: '120g + 250g',
+        quantity: '120g+250g',
         price: 120
     },
     {
