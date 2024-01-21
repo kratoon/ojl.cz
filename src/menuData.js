@@ -66,7 +66,10 @@ let menu = [
     },
     {
         name: 'fish & chips',
-        price: 80
+        desc: 'treska bílá v křupavé panádě s hranolkami',
+        allergens: '1,1a,4,7',
+        quantity: '120g + 250g',
+        price: 120
     },
     {
         name: 'triangles sýr',
@@ -131,27 +134,27 @@ let menu = [
         name: 'kofola',
         desc: 'čepovaná',
         quantity: '0.5 l',
-        price: 30
+        price: 34
     },
     {
         name: 'kofola',
         desc: 'čepovaná',
         quantity: '0.3 l',
-        price: 22
+        price: 24
     },
     {
         name: 'coca cola',
         quantity: '0.33 l',
-        price: 30
+        price: 40
     },
     {
         name: 'kinley tonic',
         quantity: '0.33 l',
-        price: 30
+        price: 40
     },
     {
-        name: 'voda',
-        desc: 'karafa',
+        name: 'kohoutková voda',
+        desc: 'karafa vody, citrón, led',
         quantity: '0.5 l',
         price: 20
     },
@@ -159,30 +162,30 @@ let menu = [
         name: 'bonaqua',
         desc: 'neperlivá, jemně perlivá, perlivá',
         quantity: '0.25 l',
-        price: 20
+        price: 25
     },
     'teplé nápoje',
     {
         name: 'grog rum',
-        price: 30
+        price: 40
     },
     {
         name: 'grog griotte',
-        price: 30
+        price: 40
     },
     {
         name: 'svařené víno',
-        price: 32
+        price: 40
     },
     {
         name: 'teplé jablíčko',
         desc: 'brusinka, hruška, jablíčko',
-        price: 25
+        price: 35
     },
     {
         name: 'čaj',
         desc: 'černý, zelený, ovocný, máta',
-        price: 25
+        price: 30
     },
     {
         name: 'med',
@@ -194,7 +197,7 @@ let menu = [
     {
         name: 'turecká káva',
         quantity: '7 g',
-        price: 32
+        price: 35
     },
     {
         name: 'ristretto',
@@ -204,22 +207,22 @@ let menu = [
     {
         name: 'espresso',
         quantity: '70 ml',
-        price: 35
+        price: 40
     },
     {
         name: 'espresso macchiato',
         quantity: '70 ml',
-        price: 35
+        price: 40
     },
     {
         name: 'lungo',
         quantity: '210 ml',
-        price: 40
+        price: 45
     },
     {
         name: 'americano',
         quantity: '210 ml',
-        price: 32
+        price: 35
     },
     {
         name: 'latte',
@@ -260,7 +263,7 @@ let menu = [
     {
         name: 'frappé',
         desc: 'ledová káva na řecký způsob: nescafé, zmzrlina, mléko, led',
-        price: 50
+        price: 55
     },
     {
         name: 'smetana',
@@ -273,13 +276,13 @@ let menu = [
         name: 'svijanský máz 11º',
         desc: 'čepované',
         quantity: '0.5 l',
-        price: 32
+        price: 39
     },
     {
         name: 'svijanský máz 11º',
         desc: 'čepované',
         quantity: '0.3 l',
-        price: 22
+        price: 25
     },
     {
         name: 'nealko Radegast',
