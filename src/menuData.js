@@ -202,7 +202,7 @@ let menu = [
     {
         name: 'ristretto',
         quantity: '70 ml',
-        price: 35
+        price: 40
     },
     {
         name: 'espresso',
