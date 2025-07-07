@@ -3,7 +3,7 @@ import MenuFirstPage from './MenuFirstPage';
 import MenuLastPage from './MenuLastPage';
 import MenuPage from './MenuPage';
 import NotFoundPage from './NotFoundPage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
     if (window.location.protocol === 'http:' && !window.location.host.startsWith('localhost:')) {
@@ -11,7 +11,7 @@ function App() {
         return null;
     }
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="menu" element={<MenuPage />} />
@@ -19,7 +19,7 @@ function App() {
                 <Route path="menu-last-page" element={<MenuLastPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
