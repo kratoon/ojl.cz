@@ -20,13 +20,24 @@ let menu = [
     {
         name: 'chipsy',
         desc: 'solené, česnekové',
-        price: 30
+        price: 40
     },
     {
         name: 'tyčky',
         desc: 'makové, solené, ďábelské',
-        price: 30
+        price: 40
     },
+    {
+        name: 'cibulové kroužky',
+        desc: 'smažené, s dresinkem',
+        price: 70
+    },
+    {
+        name: 'sýrové chipsy',
+        desc: 'smažené, s dresinkem',
+        price: 90
+    },
+    null,
     'přílohy',
     {
         name: 'hranolky',
@@ -48,7 +59,6 @@ let menu = [
         allergens: '3,10',
         price: 12
     },
-    null,
     'dezerty',
     {
         name: 'lesní pohár',
