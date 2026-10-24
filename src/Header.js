@@ -1,13 +1,21 @@
+import { Link, NavLink } from 'react-router-dom';
+
 function Header() {
     return (
-        <header>
-            <div className="panel">
-                <div className="logo-container">
-                    <img src="./resources/logo-dark.svg" alt="logo" />
-                </div>
-                <h1>Čerpací stanice</h1>
+        <header className="site-header">
+            <div className="bar">
+                <Link to="/" className="brand">
+                    <img src="./resources/logo.svg" alt="OJL" />
+                </Link>
+                <nav>
+                    <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
+                        Domů
+                    </NavLink>
+                    <NavLink to="/menu" className={({ isActive }) => (isActive ? 'active' : '')}>
+                        Jídelníček
+                    </NavLink>
+                </nav>
             </div>
-            <div className="line" />
         </header>
     );
 }

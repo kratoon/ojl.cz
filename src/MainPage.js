@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -11,13 +12,84 @@ function navigateGoogleMaps() {
     );
 }
 
+const icons = {
+    clock: (
+        <>
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 2" />
+        </>
+    ),
+    flame: (
+        <>
+            <path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.2 1 2 2 2.5C11 8.5 11 5.5 12 3z" />
+        </>
+    ),
+    drops: (
+        <>
+            <path d="M9 4s5 5 5 9a5 5 0 0 1-10 0c0-4 5-9 5-9z" />
+            <path d="M17 10s3 3 3 5.5a3 3 0 0 1-5 2.2" />
+        </>
+    ),
+    cup: (
+        <>
+            <path d="M5 8h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V8z" />
+            <path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16" />
+            <path d="M8 3v2M12 3v2" />
+        </>
+    )
+};
+
+const features = [
+    { icon: 'clock', title: 'Nonstop provoz', text: 'Čerpací stanice otevřená 24 hodin denně.' },
+    { icon: 'flame', title: 'LPG', text: 'Plnění LPG přímo na místě.' },
+    { icon: 'drops', title: 'Ruční mytí', text: 'Ruční mytí vozidel.' },
+    { icon: 'cup', title: 'Snackbar', text: 'Občerstvení a pivo, podívejte se do jídelníčku.' }
+];
+
 function MainPage() {
     return (
-        <span className="">
+        <>
             <Header />
+            <section className="hero">
+                <div className="inner">
+                    <div>
+                        <span className="eyebrow">Nonstop · u Kolína</span>
+                        <h1>Čerpací stanice OJL</h1>
+                        <p>Palivo, LPG, ruční mytí a snackbar na jednom místě. Zastavte se kdykoliv, jsme tu pro vás 24/7.</p>
+                        <div className="actions">
+                            <Link to="/menu" className="btn primary">
+                                Jídelníček
+                            </Link>
+                            <button
+                                type="button"
+                                className="btn ghost"
+                                onClick={() => document.getElementById('kde-nas-najdete').scrollIntoView({ behavior: 'smooth' })}
+                            >
+                                Jak se k nám dostanete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div className="content">
-                <div className="slds-grid slds-wrap">
-                    <div id="map" className="slds-col slds-size_full">
+                <div className="features">
+                    {features.map((f) => (
+                        <div className="feature" key={f.title}>
+                            <div className="icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    {icons[f.icon]}
+                                </svg>
+                            </div>
+                            <h3>{f.title}</h3>
+                            <p>{f.text}</p>
+                        </div>
+                    ))}
+                </div>
+                <h2 className="section-title" id="kde-nas-najdete">
+                    Kde nás najdete
+                </h2>
+                <div className="location">
+                    <div>
                         <iframe
                             title="Google Map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.097688828233!2d15.216979716100747!3d50.04700127942175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c150638eb618d%3A0xf424d2af03223371!2sOJL!5e0!3m2!1sen!2scz!4v1615051483591!5m2!1sen!2scz"
@@ -25,36 +97,20 @@ function MainPage() {
                             allowFullScreen=""
                         />
                     </div>
-                    <div className="slds-col slds-size_full tile navigate">
-                        <div className="slds-grid slds-grid_vertical-align-end">
-                            <div className="slds-size_1-of-2">
-                                <img
-                                    alt="Waze Navigate "
-                                    className="waze navigate"
-                                    src="./resources/waze.png"
-                                    onClick={navigateWaze}
-                                    style={{ cursor: 'pointer' }}
-                                />
-                            </div>
-                            <div className="slds-size_1-of-2">
-                                <img
-                                    alt="Google Navigate"
-                                    className="google navigate"
-                                    src="./resources/google-maps.png"
-                                    onClick={navigateGoogleMaps}
-                                    style={{ cursor: 'pointer' }}
-                                />
-                            </div>
-                        </div>
+                    <div className="navigate-card">
+                        <h3>Navigace</h3>
+                        <address>OJL čerpací stanice, u Kolína</address>
+                        <button type="button" onClick={navigateWaze}>
+                            <img alt="Navigovat Waze" src="./resources/waze.png" />
+                        </button>
+                        <button type="button" onClick={navigateGoogleMaps}>
+                            <img alt="Navigovat Google Maps" src="./resources/google-maps.png" />
+                        </button>
                     </div>
-                    {/*<div className="slds-col slds-size_full">*/}
-                    {/*    <div className="slds-m-top--large"></div>*/}
-                    {/*    <Menu />*/}
-                    {/*</div>*/}
                 </div>
             </div>
             <Footer />
-        </span>
+        </>
     );
 }
 
