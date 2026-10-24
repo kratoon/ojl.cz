@@ -12,11 +12,38 @@ function navigateGoogleMaps() {
     );
 }
 
+const icons = {
+    clock: (
+        <>
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 2" />
+        </>
+    ),
+    flame: (
+        <>
+            <path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.2 1 2 2 2.5C11 8.5 11 5.5 12 3z" />
+        </>
+    ),
+    drops: (
+        <>
+            <path d="M9 4s5 5 5 9a5 5 0 0 1-10 0c0-4 5-9 5-9z" />
+            <path d="M17 10s3 3 3 5.5a3 3 0 0 1-5 2.2" />
+        </>
+    ),
+    cup: (
+        <>
+            <path d="M5 8h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V8z" />
+            <path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16" />
+            <path d="M8 3v2M12 3v2" />
+        </>
+    )
+};
+
 const features = [
-    { title: 'Nonstop provoz', text: 'Čerpací stanice otevřená 24 hodin denně.' },
-    { title: 'LPG', text: 'Plnění LPG přímo na místě.' },
-    { title: 'Ruční mytí', text: 'Ruční mytí vozidel.' },
-    { title: 'Snackbar', text: 'Občerstvení a pivo, podívejte se do jídelníčku.' }
+    { icon: 'clock', title: 'Nonstop provoz', text: 'Čerpací stanice otevřená 24 hodin denně.' },
+    { icon: 'flame', title: 'LPG', text: 'Plnění LPG přímo na místě.' },
+    { icon: 'drops', title: 'Ruční mytí', text: 'Ruční mytí vozidel.' },
+    { icon: 'cup', title: 'Snackbar', text: 'Občerstvení a pivo, podívejte se do jídelníčku.' }
 ];
 
 function MainPage() {
@@ -47,9 +74,13 @@ function MainPage() {
             </section>
             <div className="content">
                 <div className="features">
-                    {features.map((f, i) => (
+                    {features.map((f) => (
                         <div className="feature" key={f.title}>
-                            <div className="num">{String(i + 1).padStart(2, '0')}</div>
+                            <div className="icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    {icons[f.icon]}
+                                </svg>
+                            </div>
                             <h3>{f.title}</h3>
                             <p>{f.text}</p>
                         </div>
