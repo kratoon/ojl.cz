@@ -116,6 +116,22 @@ header nav a.active {
     max-width: 72rem;
     margin: 0 auto;
     padding: 5rem 1.5rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero .hero-icon {
+    flex-shrink: 0;
+    width: 15rem;
+    height: auto;
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.9;
 }
 
 .hero .eyebrow {
@@ -350,6 +366,10 @@ header nav a.active {
 @media (max-width: 800px) {
     .hero .inner {
         padding: 3rem 1.5rem 5rem;
+    }
+
+    .hero .hero-icon {
+        display: none;
     }
 
     .location,

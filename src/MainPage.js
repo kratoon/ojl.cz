@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
+import PumpIcon from './PumpIcon';
 
 function navigateWaze() {
     window.open(`https://ul.waze.com/ul?preview_venue_id=9961972.99750797.80478&navigate=yes`);
@@ -69,6 +70,7 @@ function MainPage() {
                             </button>
                         </div>
                     </div>
+                    <PumpIcon className="hero-icon" />
                 </div>
             </section>
             <div className="content">
