@@ -29,12 +29,18 @@ function MainPage() {
                         <span className="eyebrow">Nonstop · u Kolína</span>
                         <h1>Čerpací stanice OJL</h1>
                         <p>Palivo, LPG, ruční mytí a snackbar na jednom místě. Zastavte se kdykoliv, jsme tu pro vás 24/7.</p>
-                        <Link to="/menu" className="btn primary">
-                            Jídelníček
-                        </Link>
-                        <a href="#kde-nas-najdete" className="btn ghost">
-                            Jak se k nám dostanete
-                        </a>
+                        <div className="actions">
+                            <Link to="/menu" className="btn primary">
+                                Jídelníček
+                            </Link>
+                            <button
+                                type="button"
+                                className="btn ghost"
+                                onClick={() => document.getElementById('kde-nas-najdete').scrollIntoView({ behavior: 'smooth' })}
+                            >
+                                Jak se k nám dostanete
+                            </button>
+                        </div>
                     </div>
                     <img className="hero-logo" src="./resources/logo.svg" alt="OJL" />
                 </div>

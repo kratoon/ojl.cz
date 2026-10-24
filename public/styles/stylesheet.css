@@ -157,6 +157,9 @@ header nav a.active {
 
 .btn {
     display: inline-block;
+    font-family: inherit;
+    background: none;
+    cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.14em;
@@ -177,8 +180,13 @@ header nav a.active {
     color: var(--yellow-color);
 }
 
+.hero .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
 .btn.ghost {
-    margin-left: 0.75rem;
     color: white;
     border-color: rgba(255, 255, 255, 0.35);
 }
@@ -357,10 +365,6 @@ header nav a.active {
         border-top: 1px solid #e6e7f2;
     }
 
-    .btn.ghost {
-        margin-left: 0;
-        margin-top: 0.75rem;
-    }
 }
 
 /* ---------- menu page ---------- */
@@ -538,3 +542,35 @@ header nav a.active {
     }
 }
 
+
+/* menu on small screens (screen only, print layout untouched) */
+@media screen and (max-width: 700px) {
+    .menu {
+        display: block;
+        width: 100%;
+    }
+
+    .menu-page {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        height: auto;
+        aspect-ratio: auto;
+        box-sizing: border-box;
+        padding: 0.5rem 0 1rem;
+    }
+
+    .menu .title {
+        margin: 1.5rem 0.5rem 1rem;
+    }
+
+    .menu .item:not(.distillate),
+    .menu .item.distillate {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .menu .item .desc {
+        width: 100%;
+    }
+}
