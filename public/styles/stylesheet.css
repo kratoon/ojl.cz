@@ -124,14 +124,52 @@ header nav a.active {
     position: absolute;
     right: 1.5rem;
     bottom: 3.5rem;
-    width: 16rem;
+    width: 12.5rem;
     height: auto;
+    fill: white;
+}
+
+.hero .hero-icon .cut {
+    fill: var(--blue-color);
+}
+
+.hero .hero-icon .cut-line {
+    fill: none;
+    stroke: var(--blue-color);
+    stroke-width: 3;
+}
+
+.hero .hero-icon .line {
     fill: none;
     stroke: white;
-    stroke-width: 3;
+    stroke-width: 2.5;
+}
+
+.hero .hero-icon .stroke {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
     stroke-linecap: round;
-    stroke-linejoin: round;
-    opacity: 0.9;
+}
+
+.hero .hero-icon text {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
+
+.hero .hero-icon .cut-text {
+    fill: var(--blue-color);
+}
+
+.hero .hero-icon .globe-text {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.hero .hero-icon .label-text {
+    fill: white;
+    font-size: 11px;
+    letter-spacing: 1.5px;
 }
 
 .hero .eyebrow {

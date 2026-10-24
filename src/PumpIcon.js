@@ -1,19 +1,30 @@
 function PumpIcon({ className }) {
     return (
-        <svg className={className} viewBox="0 0 240 380" aria-hidden="true">
-            <path d="M28 378h184M40 378v-10h160v10" />
-            <rect x="52" y="150" width="136" height="218" rx="4" />
-            <path d="M72 40h96M78 40v10M162 40v10" />
-            <rect x="68" y="50" width="104" height="100" rx="10" />
-            <path d="M68 78h104M68 106h104M68 134h104" />
-            <rect x="72" y="170" width="96" height="52" rx="6" />
-            <path d="M84 186h72M84 206h72" />
-            <rect x="72" y="238" width="96" height="46" rx="4" />
-            <circle cx="96" cy="261" r="10" />
-            <path d="M120 261h32" />
-            <path d="M72 304h96M72 324h96" />
-            <path d="M188 190c36 0 40 20 40 50v60c0 18-12 26-24 26" />
-            <path d="M188 270h14v42h-14z" />
+        <svg className={className} viewBox="16 0 190 396" aria-hidden="true">
+            <circle cx="130" cy="62" r="52" />
+            <circle className="cut-line" cx="130" cy="62" r="41" />
+            <text className="cut-text globe-text" x="130" y="73" textAnchor="middle">
+                OJL
+            </text>
+            <rect x="118" y="108" width="24" height="24" />
+            <rect x="66" y="128" width="128" height="40" rx="12" />
+            <rect x="76" y="160" width="108" height="212" />
+            <rect className="cut" x="84" y="178" width="5" height="176" />
+            <rect className="cut" x="171" y="178" width="5" height="176" />
+            <path className="cut" d="M98 298V222a32 32 0 0 1 64 0v76q0 8-8 8h-48q-8 0-8-8z" />
+            <circle className="line" cx="130" cy="207" r="8" />
+            <rect className="line" x="106" y="232" width="48" height="20" />
+            <path className="line" d="M122 232v20M138 232v20" />
+            <rect className="line" x="106" y="258" width="48" height="20" />
+            <path className="line" d="M122 258v20M138 258v20" />
+            <rect className="cut" x="96" y="316" width="68" height="26" rx="6" />
+            <text className="label-text" x="130" y="334" textAnchor="middle">
+                NONSTOP
+            </text>
+            <rect x="60" y="360" width="140" height="36" rx="3" />
+            <path className="stroke" d="M72 246c-14 0-16-26 4-32" />
+            <rect x="52" y="240" width="22" height="60" rx="7" transform="rotate(-6 63 270)" />
+            <path className="stroke" d="M60 298C50 336 24 362 34 384c8 14 30 6 36-14" />
         </svg>
     );
 }
