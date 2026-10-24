@@ -4,7 +4,7 @@ function PumpIcon({ className }) {
             <circle cx="130" cy="62" r="52" />
             <circle className="cut-line" cx="130" cy="62" r="41" />
             <text className="cut-text globe-text" x="130" y="73" textAnchor="middle">
-                OJL
+                GAS
             </text>
             <rect x="118" y="108" width="24" height="24" />
             <rect x="66" y="128" width="128" height="40" rx="12" />
@@ -18,9 +18,6 @@ function PumpIcon({ className }) {
             <rect className="line" x="106" y="258" width="48" height="20" />
             <path className="line" d="M122 258v20M138 258v20" />
             <rect className="cut" x="96" y="316" width="68" height="26" rx="6" />
-            <text className="label-text" x="130" y="334" textAnchor="middle">
-                NONSTOP
-            </text>
             <rect x="60" y="360" width="140" height="36" rx="3" />
             <path className="stroke" d="M72 246c-14 0-16-26 4-32" />
             <rect x="52" y="240" width="22" height="60" rx="7" transform="rotate(-6 63 270)" />
