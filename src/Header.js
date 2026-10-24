@@ -6,7 +6,6 @@ function Header() {
             <div className="bar">
                 <Link to="/" className="brand">
                     <img src="./resources/logo.svg" alt="OJL" />
-                    <span>Čerpací stanice</span>
                 </Link>
                 <nav>
                     <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
