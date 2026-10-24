@@ -13,10 +13,9 @@ function Footer() {
                 <div>
                     <strong>OJL a.s.</strong>
                     <div>Elišky Přemyslovny 383, Zbraslav, 156 00 Praha</div>
-                    <div>IČ: 25705695 · DIČ: CZ25705695</div>
                 </div>
                 <div id="copyright" className="copyright">
-                    {cr}
+                    {cr} · IČ: 25705695 · DIČ: CZ25705695
                 </div>
             </div>
         </footer>
