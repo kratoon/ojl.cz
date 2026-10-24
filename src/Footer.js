@@ -1,5 +1,4 @@
-const year = new Date().getFullYear();
-const cr = `© 2020 - ${year} OJL a.s.`;
+const cr = '© OJL a.s.';
 
 function Footer() {
     return (
