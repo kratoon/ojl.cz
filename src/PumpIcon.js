@@ -1,6 +1,6 @@
 function PumpIcon({ className }) {
     return (
-        <svg className={className} viewBox="0 0 240 400" aria-hidden="true">
+        <svg className={className} viewBox="0 0 240 380" aria-hidden="true">
             <path d="M28 378h184M40 378v-10h160v10" />
             <rect x="52" y="150" width="136" height="218" rx="4" />
             <path d="M72 40h96M78 40v10M162 40v10" />

@@ -116,15 +116,15 @@ header nav a.active {
     max-width: 72rem;
     margin: 0 auto;
     padding: 5rem 1.5rem 7rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+    position: relative;
 }
 
+/* stands on the yellow top border of .features (which overlaps the hero by 3.5rem) */
 .hero .hero-icon {
-    flex-shrink: 0;
-    width: 15rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 3.5rem;
+    width: 16rem;
     height: auto;
     fill: none;
     stroke: white;
