@@ -122,48 +122,33 @@ header nav a.active {
 /* stands on the yellow top border of .features (which overlaps the hero by 3.5rem) */
 .hero .hero-icon {
     position: absolute;
-    right: 1.5rem;
+    right: clamp(1.5rem, 9vw, 8rem);
     bottom: 3.5rem;
-    width: 12.5rem;
+    width: 11rem;
     height: auto;
-    fill: white;
+    fill: rgba(255, 255, 255, 0.06);
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 2;
+    stroke-linejoin: round;
 }
 
-.hero .hero-icon .cut {
-    fill: var(--blue-color);
-}
-
-.hero .hero-icon .cut-line {
+.hero .hero-icon .outline {
     fill: none;
-    stroke: var(--blue-color);
-    stroke-width: 3;
 }
 
-.hero .hero-icon .line {
+.hero .hero-icon .hose {
     fill: none;
-    stroke: white;
-    stroke-width: 2.5;
-}
-
-.hero .hero-icon .stroke {
-    fill: none;
-    stroke: white;
-    stroke-width: 6;
+    stroke-width: 4;
     stroke-linecap: round;
 }
 
 .hero .hero-icon text {
+    fill: rgba(255, 255, 255, 0.9);
+    stroke: none;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 800;
-}
-
-.hero .hero-icon .cut-text {
-    fill: var(--blue-color);
-}
-
-.hero .hero-icon .globe-text {
-    font-size: 30px;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 .hero .eyebrow {
