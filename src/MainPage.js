@@ -69,7 +69,6 @@ function MainPage() {
                             </button>
                         </div>
                     </div>
-                    <img className="hero-logo" src="./resources/logo.svg" alt="OJL" />
                 </div>
             </section>
             <div className="content">

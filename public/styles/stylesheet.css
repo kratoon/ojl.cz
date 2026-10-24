@@ -76,7 +76,7 @@ header .brand {
 }
 
 header .brand img {
-    height: 2.4rem;
+    height: 2.8rem;
 }
 
 header nav {
@@ -116,15 +116,6 @@ header nav a.active {
     max-width: 72rem;
     margin: 0 auto;
     padding: 5rem 1.5rem 7rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-}
-
-.hero .hero-logo {
-    width: min(26rem, 36%);
-    flex-shrink: 0;
 }
 
 .hero .eyebrow {
@@ -344,12 +335,6 @@ header nav a.active {
 @media (max-width: 800px) {
     .hero .inner {
         padding: 3rem 1.5rem 5rem;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-    .hero .hero-logo {
-        width: 9rem;
     }
 
     .location,
