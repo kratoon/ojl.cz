@@ -1,9 +1,15 @@
-const cr = '© OJL a.s.';
-
 function Footer() {
     return (
         <footer className="footer">
             <div className="inner">
+                <div>
+                    <strong>Čerpací stanice</strong>
+                    <address>
+                        Ovčárecká 509
+                        <br />
+                        280 02 Kolín 2-Sendražice
+                    </address>
+                </div>
                 <div>
                     <strong>Kontakt</strong>
                     <div>
@@ -11,7 +17,10 @@ function Footer() {
                     </div>
                 </div>
                 <div id="copyright" className="copyright">
-                    {cr} · Sídlo: Elišky Přemyslovny 383, Zbraslav, 156 00 Praha · IČ: 25705695 · DIČ: CZ25705695
+                    <span>© OJL a.s.</span>
+                    <span>Sídlo: Elišky Přemyslovny 383, Zbraslav, 156 00 Praha</span>
+                    <span>IČ: 25705695</span>
+                    <span>DIČ: CZ25705695</span>
                 </div>
             </div>
         </footer>
